@@ -1,0 +1,30 @@
+body{
+    background-color:white;
+}
+
+.shop_name{
+    color: blanchedalmond; 
+}
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+/* 
+.shop_img{
+    margin: auto;
+} */
+
+.shop_data{
+    color: blanchedalmond;
+}
