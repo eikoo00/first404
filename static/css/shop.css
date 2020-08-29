@@ -1,0 +1,78 @@
+*{
+    /* max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding:0; */
+    background:rgb(68, 68, 68);
+    color: white;
+}
+
+img{
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    margin:10px 0px 0px 0px;
+}
+
+
+/* body{
+    background-color:white;
+    width: 500px;
+    margin: 0 auto;
+} */
+
+/* .shop_name{
+    color: blanchedalmond; 
+} */
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+
+
+.shop_data{
+    margin: 50px 0px;
+    color: black;
+    text-align:center;
+}
+
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #ff6600;
+    border: solid 1.5px #ff6600;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+.btn-flat-border:hover {
+    background: #ff6600;
+    color: white;
+  }
+
+
+.btn_back {
+    text-align:center;
+}
+
+button {
+    margin-bottom: 40px;
+}
+
+.my-slider img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+}

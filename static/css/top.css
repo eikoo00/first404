@@ -1,0 +1,187 @@
+*{
+    max-width: 100%;
+    margin: 0 auto;
+    padding:0;
+    /* background:white; */
+}
+
+header{
+    background-color:grey;
+    position: fixed; 
+    width: 100%;
+}
+
+
+/* ここからボタン設定 */
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 0px;
+}
+
+.btn-contents {
+    background: #ffa500;
+    color: #FFF;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: solid;
+    line-height: 100%;
+    width: 12%;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10%;
+    border: 1px solid transparent;
+    outline: 5% solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+  }
+  
+  .btn-contents:hover {
+    border-color: #FFF;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: transparent;
+    outline-offset: 12px;
+    text-shadow: 2px 2px 3px #888888;
+  }
+/* ここまでボタン設定 */
+
+.header_logo{
+    width: 100px;
+    height: 20px;
+    float: left;
+    bottom: 20px;
+    /* padding: 5px; */
+}
+
+.search_area{
+    width: 300px;
+    height: 24px;
+    margin-left: 18%;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 0;
+}
+
+#search_input{
+    width              : 250px;
+    background-image : url(../img/sozai_cman_jp_20200819194330.png);
+    background-repeat  : no-repeat;
+    background-position: 8px center;
+    background-size    : auto 60%;
+    background-color   : #fff;
+    margin             : 0 auto;
+    padding-left       : 30px;
+    border             : 2px solid #666;
+    border-radius      : 6px;
+    color              : #555;
+    font-size          : 18px;
+    letter-spacing     : 0.1em;
+    font-weight        : bold;
+    outline            : 0;
+}
+
+#search_input:focus{
+    background: #cfe7ff;
+}
+
+
+
+
+
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 10%;
+
+    /* 見た目調整 */
+    height: 20px;
+    margin: 10px;
+    font-size: 20px;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+main{
+    background-color: black;
+    padding: 60px 0px 0px 0px;
+}
+
+/* img{
+    width: 33.3%;
+    margin:0;
+    padding: 0;
+    border:0;
+} */
+
+/* form{
+    display: inline-block;
+    width: 33.3%;
+    width : 33.3vw ;
+    max-width: 33.3%;
+    height: auto;
+    margin:0;
+    padding: 0;
+    border:0;
+} */
+
+.container1 form{
+    display: inline-block;
+    width: 33.3%;
+    height: 300px;
+    margin:0 auto;
+    padding: 0;
+    border:0;
+    object-fit: cover;
+    /* display: inline-block; */
+    /* width : 33.3vw ;
+    max-width: 33.3%; */
+} 
+.container2 form{
+    display: inline-block;
+    width: 33.3%;
+    height: 300px;
+    margin:0 auto;
+    padding: 0;
+    border:0;
+    object-fit: cover;
+
+} 
+
+
+
+footer{
+    background-color:grey;
+    display:block;
+
+}
+
+.copyright{
+    color: white;
+    font-size: 20px;
+    /* padding-top:30px; */
+    letter-spacing: 1px;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
