@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 app.secret_key='shop_tarmie'
 
+@app.route("/")
+def toppage():
+    return render_template("top.html")
+
 
 @app.route("/yshop/<int:id>")
 def yshop(id):
