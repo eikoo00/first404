@@ -7,19 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="ページの内容を表す文章">
     <title>yshop4</title>
-    <link rel="stylesheet" href="../static/shop.css">
+    <link rel="stylesheet" href="../static/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 
 <body>
 
-    <div class = "db_imgs">
-
-        <!-- <form action = "shop_img" method = "GET">
-         <img src="../img/ダウンロード.jpg" alt="">
-        </form> -->
-
+    <div class="my-slider">
+        <div><img src="../static/img/club/club1_2.jpg"></div>
+        <div><img src="../static/img/bar/bar2_1.jpg"></div>
+        <div><img src="../static/img/bar/bar2_3.jpeg"></div>
     </div>
-     
+
+
+
     <div class = "shop_data">
 
         <p>ジャンル：{{shop_info[2]}}</p>
@@ -35,6 +37,21 @@
         
     </div>
 
+    <div class="btn_back">
+        <button class="btn-flat-border" type="button" onclick="history.back()">BACK</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+        $(function(){
+          $('.my-slider').slick({
+            dots:true,
+          });
+        });
+    </script>
+    
 </body>
 
 </html>

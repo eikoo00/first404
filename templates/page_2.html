@@ -16,6 +16,55 @@
 
 
     <body>
+
+        <header>
+            <div class="header_logo">
+            <img src="../static/img/team_logo.png" alt="logo">
+            </div>
+      
+            <div class = "search_area">
+              <form action = "/search-result/">
+                <form onsubmit="return goSearch()" class="search_area">
+                 <input id = "search_input" placeholder = "店舗名を検索" type = "text" name = "search-key">
+                </form>
+              </form>
+            </div>
+      
+            <nav class="horizontal-list">
+              <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_izakaya.html'"> 
+               <div>居酒屋</div>
+              </button>
+              <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_snack.html'"> 
+               <div>スナック</div>
+              </button>
+              <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_%20club.html'"> 
+                <div>クラブ</div>
+              </button>
+              <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_bar.html'"> 
+                <div>BAR</div>
+              </button>
+              <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_%20sousaku.html'"> 
+                <div>創作料理</div>
+              </button>
+              <button class="btn-contents"> 
+                <div>和食</div>
+              </button>
+              <button class="btn-contents"> 
+              <div>洋食</div>
+              </button>
+              <button class="btn-contents"> 
+                <div>中華</div>
+              </button>
+              <button class="btn-contents"> 
+              <div>焼肉</div>
+              </button>
+              <button class="btn-contents"> 
+                <div>other</div>
+              </button>
+            </nav>
+          </header>
+
+          
         <main id = "img_scroll">
       
             <div class ="container">

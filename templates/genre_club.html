@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="ページの内容を表す文章">
     <!-- cssパス -->
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="../static/css/top.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="../static/css/top_sp.css">
+    <link rel="stylesheet" href="../static/css/top_sp.css" type="text/css" media="screen and (max-width:559px)">
+    <link rel="stylesheet" href="../static/css/top.css" type="text/css" media="screen and (min-width:600px)">
+    <link rel="icon" type="image/png" href="/static/img/team_name.png">
+    
+    
     
     <title>俺たちのサイト</title>
 
@@ -22,13 +25,17 @@
 
   <body>
     <header>
-      <div class = "search_area">
-        <form action = "/search-result/">
-          <form onsubmit="return goSearch()" class="search_area">
-           <input id = "search_input" placeholder = "店舗名を検索" type = "text" name = "search-key">
-          </form>
-        </form>
-      </div>
+        <div class="header_logo">
+          <img src="../static/img/team_logo.png" alt="logo">
+          </div>
+    
+          <div class = "search_area">
+            <form action = "/search-result/">
+              <form onsubmit="return goSearch()" class="search_area">
+               <input id = "search_input" placeholder = "店舗名を検索" type = "text" name = "search-key">
+              </form>
+            </form>
+          </div>
 
       <nav class="horizontal-list">
         <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/top.html'"> 
@@ -40,13 +47,13 @@
         <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_snack.html'"> 
          <div>スナック</div>
         </button>
-        <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_%20club.html'"> 
+        <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_club.html'"> 
           <div>クラブ</div>
         </button>
         <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_bar.html'"> 
           <div>BAR</div>
         </button>
-        <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_%20sousaku.html'"> 
+        <button class="btn-contents" onclick="location.href='file:///C:/Users/tomoko/Desktop/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C/templates/genre_sousaku.html'"> 
           <div>創作料理</div>
         </button>
         <button class="btn-contents"> 
@@ -69,11 +76,16 @@
 
     <main id = "img_scroll">
       
-      <div class ="container">
+      <div class ="container1">
         <div style="display:inline-flex">
-          <form action="/yshop7" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop7画像" formaction ="http://127.0.0.1:5000/yshop7" ></form>
-          <form action="/yshop8" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop8画像" formaction ="http://127.0.0.1:5000/yshop8"></form>
-          <form action="/yshop13" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop13画像" formaction ="http://127.0.0.1:5000/yshop13"></form>
+          <form action="/yshop7" method="GET"><input type="image" src="../static/img/club/club1_1.jpg" alt="yshop7画像" formaction ="http://127.0.0.1:5000/yshop/7" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
+          <form action="/yshop8" method="GET"><input type="image" src="../static/img/club/club2_1.jpg" alt="yshop8画像" formaction ="http://127.0.0.1:5000/yshop/8" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
+          <form action="/yshop13" method="GET"><input type="image" src="../static/img/club/club3_1.jpg" alt="yshop13画像" formaction ="http://127.0.0.1:5000/yshop/13" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
+        </div>
+        <div style="display:inline-flex">
+          <form action="/yshop7" method="GET"><input type="image" src="../static/img/club/club1_2.jpg" alt="yshop7-2画像" formaction ="http://127.0.0.1:5000/yshop/7" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
+          <form action="/yshop8" method="GET"><input type="image" src="../static/img/club/club2_2.jpg" alt="yshop8-2画像" formaction ="http://127.0.0.1:5000/yshop/8" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
+          <form action="/yshop13" method="GET"><input type="image" src="../static/img/club/club3_2.jpg" alt="yshop13-2画像" formaction ="http://127.0.0.1:5000/yshop/13" style="width: 100%; height:110%; object-fit: cover;  margin:0px 0px -8px 0px;"></form>
         </div>
         
           <!-- 
@@ -92,8 +104,9 @@
           <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
           <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article> -->
       
-      <p class="pagination"></p>
-        <a class="pagination__next" href="page_2.html">Next</a>
+      <!-- <p class="pagination"></p>
+        <a class="pagination__next" href="page_2.html">Next</a> -->
+      </div>
     </main>
 
     <footer>

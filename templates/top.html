@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="ページの内容を表す文章">
     <!-- cssパス -->
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="../static/css/top.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="../static/css/top_sp.css">
+    <link rel="stylesheet" href="../static/css/top_sp.css" type="text/css" media="screen and (max-width:559px)">
+    <link rel="stylesheet" href="../static/css/top.css" type="text/css" media="screen and (min-width:600px)">
+    <link rel="icon" type="image/png" href="/static/img/team_name.png">
     
     <title>俺たちのサイト</title>
 
@@ -21,7 +22,12 @@
   </head>
 
   <body>
+
     <header>
+      <div class="header_logo">
+      <img src="../static/img/team_logo.png" alt="logo">
+      </div>
+
       <div class = "search_area">
         <form action = "/search-result/">
           <form onsubmit="return goSearch()" class="search_area">
@@ -64,57 +70,84 @@
       </nav>
     </header>
 
-    <main id = "img_scroll">
-      
-      <div class ="container">
-        <div style="display:inline-flex">
-          <form action="/yshop1" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop1画像" formaction ="http://127.0.0.1:5000/yshop1" ></form>
-          <form action="/yshop2" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop2画像" formaction ="http://127.0.0.1:5000/yshop2" ></form>
-          <form action="/yshop3" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop3画像" formaction ="http://127.0.0.1:5000/yshop3" ></form>
+    <!-- <main id = "img_scroll"> -->
+    <main>
+
+      <!-- <ul random="30"> -->
+        <div class ="container1">
+          <div style="display:inline-flex">
+            <form action="/yshop/1" method="GET"><input type="image" src="../static/img/izakaya/izakaya1_1.jpg" alt="yshop1画像" formaction ="http://127.0.0.1:5000/yshop/1" style="width:100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/2" method="GET"><input type="image" src="../static/img/bar/bar1_1.jpg" alt="yshop2画像" formaction ="http://127.0.0.1:5000/yshop/2" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/3" method="GET"><input type="image" src="../static/img/bar/bar2_1.jpg" alt="yshop3画像" formaction ="http://127.0.0.1:5000/yshop/3" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/4" method="GET"><input type="image" src="../static/img/sousaku/sousaku1_1.jpg" alt="yshop4画像" formaction ="http://127.0.0.1:5000/yshop/4" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/5" method="GET"><input type="image" src="../static/img/sousaku/sousaku2_1.jpg" alt="yshop5画像" formaction ="http://127.0.0.1:5000/yshop/5" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/6" method="GET"><input type="image" src="../static/img/snack/snack1_1.jpg" alt="yshop6画像" formaction ="http://127.0.0.1:5000/yshop/6" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/7" method="GET"><input type="image" src="../static/img/club/club1_1.jpg" alt="yshop7画像" formaction ="http://127.0.0.1:5000/yshop/7" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/8" method="GET"><input type="image" src="../static/img/club/club2_1.jpg" alt="yshop8画像" formaction ="http://127.0.0.1:5000/yshop/8" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/9" method="GET"><input type="image" src="../static/img/bar/bar3_1.jpg" alt="yshop9画像" formaction ="http://127.0.0.1:5000/yshop/9" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/10" method="GET"><input type="image" src="../static/img/izakaya/izakaya2_1.jpg" alt="yshop10画像" formaction ="http://127.0.0.1:5000/yshop/10" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/11" method="GET"><input type="image" src="../static/img/snack/snack2_1.jpg" alt="yshop11画像" formaction ="http://127.0.0.1:5000/yshop/11" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/12" method="GET"><input type="image" src="../static/img/sousaku/sousaku3_1.jpg" alt="yshop12画像" formaction ="http://127.0.0.1:5000/yshop/12" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/13" method="GET"><input type="image" src="../static/img/club/club3_1.jpg" alt="yshop13画像" formaction ="http://127.0.0.1:5000/yshop/13" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/14" method="GET"><input type="image" src="../static/img/izakaya/izakaya3_1.jpg" alt="yshop14画像" formaction ="http://127.0.0.1:5000/yshop/14" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/15" method="GET"><input type="image" src="../static/img/snack/snack3_1.jpg" alt="yshop15画像" formaction ="http://127.0.0.1:5000/yshop/15" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
         </div>
-        <div style="display:inline-flex">
-          <form action="/yshop4" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop4画像" formaction ="http://127.0.0.1:5000/yshop4" ></form>
-          <form action="/yshop5" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop5画像" formaction ="http://127.0.0.1:5000/yshop5" ></form>
-          <form action="/yshop6" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop6画像" formaction ="http://127.0.0.1:5000/yshop6" ></form>
+
+        <div class ="container2">
+          <div style="display:inline-flex">
+            <form action="/yshop/1" method="GET"><input type="image" src="../static/img/izakaya/izakaya1_2.jpg" alt="yshop1-2画像" formaction ="http://127.0.0.1:5000/yshop/1" style="width:100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/2" method="GET"><input type="image" src="../static/img/bar/bar1_2.jpg" alt="yshop2-2画像" formaction ="http://127.0.0.1:5000/yshop/2" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/3" method="GET"><input type="image" src="../static/img/bar/bar2_2.jpg" alt="yshop3-2画像" formaction ="http://127.0.0.1:5000/yshop/3" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/4" method="GET"><input type="image" src="../static/img/sousaku/sousaku1_2.jpg" alt="yshop4-2画像" formaction ="http://127.0.0.1:5000/yshop/4" style="width: 100%; height:130%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/5" method="GET"><input type="image" src="../static/img/sousaku/sousaku2_2.jpg" alt="yshop5-2画像" formaction ="http://127.0.0.1:5000/yshop/5" style="width: 100%; height:130%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/6" method="GET"><input type="image" src="../static/img/snack/snack1_2.jpg" alt="yshop6-2画像" formaction ="http://127.0.0.1:5000/yshop/6" style="width: 100%; height:130%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/7" method="GET"><input type="image" src="../static/img/club/club1_2.jpg" alt="yshop7-2画像" formaction ="http://127.0.0.1:5000/yshop/7" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/8" method="GET"><input type="image" src="../static/img/club/club2_2.jpg" alt="yshop8-2画像" formaction ="http://127.0.0.1:5000/yshop/8" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/9" method="GET"><input type="image" src="../static/img/bar/bar3_2.jpg" alt="yshop9-2画像" formaction ="http://127.0.0.1:5000/yshop/9" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/10" method="GET"><input type="image" src="../static/img/izakaya/izakaya2_2.jpg" alt="yshop10-2画像" formaction ="http://127.0.0.1:5000/yshop/10" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/11" method="GET"><input type="image" src="../static/img/snack/snack2_2.jpg" alt="yshop11-2画像" formaction ="http://127.0.0.1:5000/yshop/11" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/12" method="GET"><input type="image" src="../static/img/sousaku/sousaku3_2.jpg" alt="yshop12-2画像" formaction ="http://127.0.0.1:5000/yshop/12" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
+          <div style="display:inline-flex">
+            <form action="/yshop/13" method="GET"><input type="image" src="../static/img/club/club3_2.jpg" alt="yshop13-2画像" formaction ="http://127.0.0.1:5000/yshop/13" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/14" method="GET"><input type="image" src="../static/img/izakaya/izakaya3_2.jpg" alt="yshop14-2画像" formaction ="http://127.0.0.1:5000/yshop/14" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+            <form action="/yshop/15" method="GET"><input type="image" src="../static/img/snack/snack3_2.jpg" alt="yshop15画像" formaction ="http://127.0.0.1:5000/yshop/15" style="width: 100%; height:110%; object-fit: cover; margin:0px 0px -8px 0px;"></form>
+          </div>
         </div>
-        <div style="display:inline-flex">
-          <form action="/yshop7" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop7画像" formaction ="http://127.0.0.1:5000/yshop7" ></form>
-          <form action="/yshop8" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop8画像" formaction ="http://127.0.0.1:5000/yshop8" ></form>
-          <form action="/yshop9" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop9画像" formaction ="http://127.0.0.1:5000/yshop9" ></form>
-        </div>
-        <div style="display:inline-flex">
-          <form action="/yshop10" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop10画像" formaction ="http://127.0.0.1:5000/yshop10" ></form>
-          <form action="/yshop11" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop11画像" formaction ="http://127.0.0.1:5000/yshop11" ></form>
-          <form action="/yshop12" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop12画像" formaction ="http://127.0.0.1:5000/yshop12" ></form>
-        </div>
-        <div style="display:inline-flex">
-          <form action="/yshop13" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop13画像" formaction ="http://127.0.0.1:5000/yshop13"></form>
-          <form action="/yshop14" method="GET"><input type="image" src="../static/img/YO26199.jpg" alt="yshop14画像" formaction ="http://127.0.0.1:5000/yshop14"></form>
-          <form action="/yshop15" method="GET"><input type="image" src="../static/img/YO26109.jpg" alt="yshop15画像" formaction ="http://127.0.0.1:5000/yshop15"></form>
-        </div>
-      </div>
-          <!-- 
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article>
-          <article class = "post"><img src="../static/img/YO26199.jpg" style="vertical-align:middle;"><img src="../static/img/YO26109.jpg" style="vertical-align:middle;"><img src="../static/img/four_backbar_side.jpg" style="vertical-align:middle;"></article> -->
-      
-      <p class="pagination"></p>
-        <a class="pagination__next" href="page_2.html">Next</a>
+      <!-- </ul> -->
+
+      <!-- <p class="pagination"></p>
+      <a class="pagination__next" href="top2.html">next</a>
+       -->
+
     </main>
 
-    <footer>
-      <p class = "copyright">copyright © 2020 チーム名 all rights reser</p>
-    </footer>
+
   </body>
+
+  <footer>
+    <p class="pagination"></p>
+    <a class="pagination__next" href="top2.html">next</a>
+    
+    <p class = "copyright">copyright © 2020 チーム名 all rights reser</p>
+  </footer>
+
+
+
+  
 </html>
