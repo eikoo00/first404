@@ -5,11 +5,36 @@ app = Flask(__name__)
 
 app.secret_key='shop_tarmie'
 
+
+# TOPページ表示
 @app.route("/")
 def toppage():
     return render_template("top.html")
 
 
+# 各ジャンルページ表示
+@app.route("/izakaya")
+def genre_izakaya():
+    return render_template("genre_izakaya.html")
+
+@app.route("/snack")
+def genre_snack():
+    return render_template("genre_snack.html")
+
+@app.route("/club")
+def genre_club():
+    return render_template("genre_club.html")
+
+@app.route("/bar")
+def genre_bar():
+    return render_template("genre_bar.html")
+    
+@app.route("/sousaku")
+def genre_sousaku():
+    return render_template("genre_sousaku.html")
+
+
+# 各店舗情報ページ表示
 @app.route("/yshop/<int:id>")
 def yshop(id):
     conn = sqlite3.connect('data.db')
@@ -166,7 +191,6 @@ def yshop(id):
 @app.errorhandler(404)
 def notfound(code):
     return "404ですよーーー"
-
 
 
 
